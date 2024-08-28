@@ -5,18 +5,21 @@ body {
     padding: 0;
 }
 
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 2px solid #6A9BFF;
+    background-color: #9DBDFF; 
+    box-sizing: border-box; 
+}
+
 .dashboard {
     max-width: 100%;
     margin: 0 auto;
     padding: 20px;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #eaeaea;
 }
 
 .profile {
@@ -29,6 +32,7 @@ header {
     height: 80px;
     border-radius: 50%;
     margin-right: 20px;
+    border: 3px solid #6A9BFF;
 }
 
 .mentor-info h2 {
@@ -82,7 +86,7 @@ header {
     height: 200px;
 }
 
-/* Calendar Styles */
+
 .calendar {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -91,11 +95,12 @@ header {
 }
 
 .day {
-    background-color: #eaeaea;
+    background-color: #6A9BFF;
     text-align: center;
     padding: 10px;
     font-weight: bold;
     border-radius: 4px;
+    color: #fff;
 }
 
 .date {
@@ -114,7 +119,7 @@ header {
 }
 
 .change-slot {
-    background-color: #007bff;
+    background-color: #6A9BFF;
     color: #fff;
     border: none;
     padding: 5px 10px;
@@ -125,7 +130,7 @@ header {
 }
 
 .change-slot:hover {
-    background-color: #0056b3;
+    background-color: #4B74CC;
 }
 
 .meeting {
@@ -133,7 +138,7 @@ header {
     border-color: #bee5eb;
 }
 
-/* Upcoming Slots Styles */
+
 .upcoming-slots {
     margin-top: 20px;
 }
@@ -144,11 +149,11 @@ header {
 }
 
 .slot-info {
-    background-color: #f9f9f9;
+    background-color: #9DBDFF;
     padding: 15px;
     margin-bottom: 10px;
     border-radius: 4px;
-    border: 1px solid #eaeaea;
+    border: 1px solid #6A9BFF;
 }
 
 .slot-info p {
