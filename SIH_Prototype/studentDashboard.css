@@ -1,0 +1,170 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e7f6f2;
+}
+
+.navbar{
+    padding: 5px 20px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.user{
+    border-radius: 50%;
+    border: 1px gray solid;
+}
+.navbar>input{
+    border: gray 1px solid;
+    outline: none;
+    padding: 0 10px;
+    border-radius: 20px;
+    height: 70%;
+    justify-self: end;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.section {
+  background-color: #9dbdff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: white;
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.explore-all {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.domains-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.domain {
+  display: block;
+  background-color: #6a9bff;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all ease-in-out 0.1s;
+}
+
+.domain:hover {
+  scale: 1.05;
+  background-color: #5990ff;
+}
+
+.mentors-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mentor {
+  text-align: center;
+  flex: 1;
+}
+
+.mentor img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #800000;
+  margin-bottom: 10px;
+}
+
+.mentor p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.container-booked {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.sessions-list {
+  background-color: #d3d3d3;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.session {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.session h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.session p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.book-now {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.book-now:hover {
+  background-color: #45a049;
+}

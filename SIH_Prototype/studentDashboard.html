@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="studentDashboard.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <img src="./only_logo.PNG" alt="logo" class="logo" style="height: 100%;">
+      <input type="text" placeholder="Explore">
+      <img src="./usericon.png" alt="user" class="user" style="height: 100%;">
+    </div>
+    <div class="container">
+      <h1 id="greeting" style="color: black">Welcome Back Tejas!</h1>
+
+      <div class="section">
+        <div class="section-header">
+          <h2>Explore Domains-</h2>
+          <a href="domains.html" class="explore-all">Explore all &rarr;</a>
+        </div>
+        <div class="domains-grid">
+          <a href="science.html" class="domain">Science</a>
+          <a href="engineering.html" class="domain">Engineering</a>
+          <a href="commerce.html" class="domain">Commerce</a>
+          <a href="arts.html" class="domain">Arts</a>
+          <a href="law.html" class="domain">Law</a>
+          <a href="music.html" class="domain">Music</a>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="section">
+        <div class="section-header">
+          <h2>Top Mentors-</h2>
+          <a href="mentors.html" class="explore-all">Explore all &rarr;</a>
+        </div>
+        <div class="mentors-grid">
+          <a class="mentor" href="#">
+            <img src="mentor.jpg" alt="Mentor 1" />
+            <p><span style="font-size: larger;">Pratham Jadhav</span> <br>AI/ML</p>
+          </a>
+          <a class="mentor" href="#">
+            <img src="mentor.jpg" alt="Mentor 1" />
+            <p><span style="font-size: larger;">Hrishi Katarki</span> <br>Quantum Mechanics</p> </a
+          ><a class="mentor" href="#">
+            <img src="mentor.jpg" alt="Mentor 1" />
+            <p><span style="font-size: larger;">Madhur Patil</span><br>Videography</p> </a
+          ><a class="mentor" href="#">
+            <img src="mentor.jpg" alt="Mentor 1" />
+            <p><span style="font-size: larger;">Soumya Katariya</span><br>Law</p> </a
+          ><a class="mentor" href="#">
+            <img src="mentor.jpg" alt="Mentor 1" />
+            <p><span style="font-size: larger;">Raj Shinde</span><br>Engineering</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container-booked">
+      <h1>Your Booked Sessions</h1>
+      <div class="sessions-list">
+        <div class="session">
+          <h3>Session with Dr. Sarah Lee</h3>
+          <p>Date: 2024-09-10</p>
+          <p>Time: 10:00 AM - 11:00 AM</p>
+          <p>Topic: Advanced Machine Learning</p>
+        </div>
+        <div class="session">
+          <h3>Session with Prof. John Doe</h3>
+          <p>Date: 2024-09-12</p>
+          <p>Time: 02:00 PM - 03:00 PM</p>
+          <p>Topic: Quantum Computing Basics</p>
+        </div>
+        <div class="session">
+          <h3>Session with Dr. Emily Davis</h3>
+          <p>Date: 2024-09-15</p>
+          <p>Time: 11:00 AM - 12:00 PM</p>
+          <p>Topic: Data Science Career Paths</p>
+        </div>
+      </div>
+      <button id="bookNowBtn" class="book-now">Book Now</button>
+    </div>
+  </body>
+</html>
