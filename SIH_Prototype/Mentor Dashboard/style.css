@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eaeaea;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.mentor-info h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.mentor-info p {
+    margin: 5px 0 0;
+    color: #777;
+}
+
+.rating {
+    margin-top: 10px;
+}
+
+.rating h3 {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.rating p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.rating-stars {
+    font-size: 24px;
+    color: #ffc107;
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.stat-item {
+    flex: 1 1 45%;
+    margin: 10px;
+}
+
+.stat-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.stat-item canvas {
+    width: 100%;
+    height: 200px;
+}
+
+/* Calendar Styles */
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.day {
+    background-color: #eaeaea;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.date {
+    background-color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #eaeaea;
+    position: relative;
+}
+
+.meeting-info {
+    font-size: 12px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.change-slot {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.change-slot:hover {
+    background-color: #0056b3;
+}
+
+.meeting {
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+}
+
+/* Upcoming Slots Styles */
+.upcoming-slots {
+    margin-top: 20px;
+}
+
+.upcoming-slots h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.slot-info {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #eaeaea;
+}
+
+.slot-info p {
+    margin: 5px 0;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .stats {
+        flex-direction: column;
+    }
+
+    .stat-item {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+
+    .calendar {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .day, .date {
+        padding: 5px;
+        font-size: 12px;
+    }
+}

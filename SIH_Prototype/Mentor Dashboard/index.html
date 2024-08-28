@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>Mentor Dashboard</h1>
+            <div class="profile">
+                <img src="mentorimg.jpg" alt="Mentor Profile Picture" class="profile-pic">
+                <div class="mentor-info">
+                    <h2>John Doe</h2>
+                    <p>Senior Data Scientist</p>
+                    <div class="rating">
+                        <h3>Ratings</h3>
+                        <p>4.8/5</p>
+                        <div class="rating-stars">
+                            ★★★★☆
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="stats">
+            <div class="stat-item">
+                <h3>Upcoming Meetings</h3>
+                <div class="calendar">
+                    <div class="day">Sun</div>
+                    <div class="day">Mon</div>
+                    <div class="day">Tue</div>
+                    <div class="day">Wed</div>
+                    <div class="day">Thu</div>
+                    <div class="day">Fri</div>
+                    <div class="day">Sat</div>
+
+                    <!-- Example dates with meetings -->
+                    <div class="date"></div>
+                    <div class="date">1</div>
+                    <div class="date">2</div>
+                    <div class="date meeting">
+                        <p>3</p>
+                        <p class="meeting-info">10:00 AM with Jane</p>
+                        <button class="change-slot">Change Slot</button>
+                    </div>
+                    <div class="date">4</div>
+                    <div class="date">5</div>
+                    <div class="date meeting">
+                        <p>6</p>
+                        <p class="meeting-info">2:00 PM with Robert</p>
+                        <button class="change-slot">Change Slot</button>
+                    </div>
+                    <!-- Continue adding more dates as needed -->
+                </div>
+            </div>
+
+            <div class="stat-item">
+                <h3>Meetings Conducted</h3>
+                <canvas id="meetingsChart"></canvas>
+            </div>
+        </section>
+
+        <!-- Upcoming Slots Information -->
+        <section class="upcoming-slots">
+            <h3>Upcoming Meetings</h3>
+            <div class="slot-info">
+                <p><strong>Time:</strong> 10:00 AM</p>
+                <p><strong>Mentee:</strong> Jane Smith</p>
+                <p><strong>Number of Mentees:</strong> 1</p>
+                <p><strong>Topic:</strong> Data Science Basics</p>
+            </div>
+            <div class="slot-info">
+                <p><strong>Time:</strong> 2:00 PM</p>
+                <p><strong>Mentee:</strong> Robert Brown</p>
+                <p><strong>Number of Mentees:</strong> 2</p>
+                <p><strong>Topic:</strong> Machine Learning</p>
+            </div>
+            <!-- Continue adding more slot information as needed -->
+        </section>
+    </div>
+
+    <!-- Include Chart.js for the meetings conducted chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('meetingsChart').getContext('2d');
+        const meetingsChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
+                datasets: [{
+                    label: 'Meetings Conducted',
+                    data: [5, 10, 8, 6, 9, 12, 7, 15],
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
