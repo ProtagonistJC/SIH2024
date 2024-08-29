@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forums</title>
+    <link rel="stylesheet" href="studentDashboard.css" />
+    <style>
+      .container {
+        margin-top: 20px;
+      }
+
+      .forums-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+      }
+
+      .forum-card {
+        background-color: #f4f4f4;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease-in-out;
+      }
+
+      .forum-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .forum-card h3 {
+        margin-top: 0;
+        font-size: 1.5em;
+      }
+
+      .forum-card p {
+        margin: 10px 0;
+        color: #333;
+      }
+
+      .forum-card .field {
+        color: #007bff;
+        font-weight: bold;
+      }
+
+      .forum-card .description {
+        font-size: 0.9em;
+        color: #555;
+      }
+
+      .answer-btn {
+        display: inline-block;
+        padding: 10px 15px;
+        margin-top: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .answer-btn:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <img src="./only_logo.PNG" alt="logo" class="logo" style="height: 100%" />
+      <input type="text" placeholder="Explore" />
+      <img src="./usericon.png" alt="user" class="user" style="height: 100%" />
+    </div>
+
+    <div class="container">
+      <h1 style="color: black">Student Forums</h1>
+
+      <div class="forums-grid">
+        <div class="forum-card">
+          <h3>How to start with Machine Learning?</h3>
+          <p><span class="field">Field:</span> AI/ML</p>
+          <p><span class="field">Asked by:</span> Tejas Gupta</p>
+          <p class="description">
+            I'm new to machine learning and would like to know the best
+            resources and steps to get started. Any suggestions?
+          </p>
+          <button class="answer-btn">Answer</button>
+        </div>
+
+        <div class="forum-card">
+          <h3>What are the career opportunities in Quantum Computing?</h3>
+          <p><span class="field">Field:</span> Quantum Mechanics</p>
+          <p><span class="field">Asked by:</span> Rohan Mehta</p>
+          <p class="description">
+            Quantum computing seems like a fascinating field. I want to
+            understand the possible career paths and necessary qualifications.
+          </p>
+          <button class="answer-btn">Answer</button>
+        </div>
+
+        <div class="forum-card">
+          <h3>Best practices for video editing?</h3>
+          <p><span class="field">Field:</span> Videography</p>
+          <p><span class="field">Asked by:</span> Anjali Verma</p>
+          <p class="description">
+            I'm working on a project that involves a lot of video editing. Can
+            anyone suggest the best software and techniques?
+          </p>
+          <button class="answer-btn">Answer</button>
+        </div>
+
+        <div class="forum-card">
+          <h3>Understanding Intellectual Property Law?</h3>
+          <p><span class="field">Field:</span> Law</p>
+          <p><span class="field">Asked by:</span> Soumya Katariya</p>
+          <p class="description">
+            I need a basic understanding of intellectual property law for my
+            startup. What are the key concepts I should know?
+          </p>
+          <button class="answer-btn">Answer</button>
+        </div>
+
+        <div class="forum-card">
+          <h3>Introduction to Blockchain Technology?</h3>
+          <p><span class="field">Field:</span> Engineering</p>
+          <p><span class="field">Asked by:</span> Raj Shinde</p>
+          <p class="description">
+            I'm curious about blockchain technology and its applications. Can
+            someone provide an introduction to this field?
+          </p>
+          <button class="answer-btn">Answer</button>
+        </div>
+
+        <div class="forum-card">
+          <h3>Starting a career in classical music?</h3>
+          <p><span class="field">Field:</span> Music</p>
+          <p><span class="field">Asked by:</span> Aditi Sharma</p>
+          <p class="description">
+            I'm passionate about classical music and want to pursue it
+            professionally. What steps should I take to start my career?
+          </p>
+          <button class="answer-btn">Answer</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
