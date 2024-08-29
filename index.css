@@ -118,30 +118,40 @@ header, .hero-section, .stats-section, .placeholder-section {
 }
 
 .hero-title {
-    font-size: 36px;
+    font-size: 64px;
     font-weight: bold;
     margin-bottom: 12px;
 }
 
 .hero-description {
+    font-size: 24px;
     margin-bottom: 24px;
 }
 
 .hero-button {
-    background-color: #6b7280;
+    background-color: #6A9BFF;
     color: #fff;
-    padding: 10px 20px;
     border-radius: 4px;
     border: none;
     cursor: pointer;
+    height: 45px;
+    padding: 0 20px;
+    transition: all ease-in-out 0.1s;
+}
+.hero-button:hover{
+    scale: 1.04;
 }
 
 .stats-section {
+    margin: 30px 50px;
+    padding:20px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 40px;
     text-align: center;
+    border-radius: 10px;
+    /* border:1px solid gray; */
+    background-color: #e5e7eb;
 }
 
 .stat {
@@ -155,9 +165,9 @@ header, .hero-section, .stats-section, .placeholder-section {
     position: absolute;
     top: 0;
     right: 0;
-    width: 1px;
+    width: 3px;
     height: 100%;
-    background-color: #ddd;
+    background-color: #b0b0b0;
 }
 
 .stat-number {
@@ -170,6 +180,53 @@ header, .hero-section, .stats-section, .placeholder-section {
     font-size: 16px;
 }
 
+.forumadd {
+    background-color: #e5e7eb;
+    height: 400px;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+.forum-img-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.forum-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(30%); /* Darken the image for better text contrast */
+}
+
+.forum-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white !important;
+    font-size: 40px;
+    filter: brightness(500%) !important;
+    font-weight: bold;
+    text-align: center;
+}
+
+
 .placeholder-section {
     margin-top: 40px;
     text-align: center;
@@ -178,47 +235,6 @@ header, .hero-section, .stats-section, .placeholder-section {
     color: #555;
     padding: 20px;
     flex-grow: 1;
-}
-
-.footer {
-    background-color: #1f2937;
-    color: #fff;
-    padding: 48px 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: auto;
-}
-
-.footer-content {
-    display: flex;
-    align-items: center;
-}
-
-.footer-logo {
-    height: 64px;
-    width: auto;
-    margin-right: 16px;
-}
-
-.footer-text {
-    font-weight: bold;
-}
-
-.footer-links {
-    display: flex;
-    gap: 16px;
-}
-
-.footer-link {
-    color: #9ca3af;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-link:hover {
-    color: #f3f4f6;
 }
 
 @media (max-width: 768px) {
