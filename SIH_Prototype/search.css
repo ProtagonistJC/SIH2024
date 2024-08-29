@@ -8,6 +8,28 @@
 body {
     background-color: #f5f5f5;
 }
+.navbar{
+    padding: 5px 20px;
+    height: 50px;
+    display: flex;
+    position: sticky;
+    top:0px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.user{
+    border-radius: 50%;
+    border: 1px gray solid;
+}
+.navbar>input{
+    border: gray 1px solid;
+    outline: none;
+    padding: 0 10px;
+    border-radius: 20px;
+    height: 70%;
+    justify-self: end;
+}
 
 header {
     display: flex;
@@ -58,8 +80,7 @@ header {
     height:50px;
     position: sticky;
     top: 50px;
-    border-bottom: 0.5px solid rgb(216, 211, 211);
-    box-shadow: 0 0 5px rgba(146, 141, 141, 0.5);
+    border-top: 1px solid gray;
     /* border: 2px solid black; */
     padding-left: 20px;
     padding-right: 20px;
@@ -132,11 +153,11 @@ main {
 }
 
 .mentor-card {
-    width: 600px;
+    width: 80%;
     margin-bottom: 40px;
     height: 450px;
     display: flex;
-    background-color: #ddd;
+    background-color: #9DBDFF;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

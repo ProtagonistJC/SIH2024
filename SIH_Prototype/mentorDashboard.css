@@ -5,6 +5,27 @@ body {
     padding: 0;
 }
 
+.navbar{
+    padding: 5px 20px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.user{
+    border-radius: 50%;
+    border: 1px gray solid;
+}
+.navbar>input{
+    border: gray 1px solid;
+    outline: none;
+    padding: 0 10px;
+    border-radius: 20px;
+    height: 70%;
+    justify-self: end;
+}
+
 header {
     width: 100%;
     display: flex;
@@ -19,7 +40,7 @@ header {
 .dashboard {
     max-width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    margin:20px;
 }
 
 .profile {
